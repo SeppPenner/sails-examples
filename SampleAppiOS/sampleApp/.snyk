@@ -1,0 +1,26 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:lodash:20180130':
+    - sails > skipper > lodash:
+        patched: '2019-07-11T07:21:08.613Z'
+    - sails-disk > machinepack-fs > machinepack-util > lodash:
+        patched: '2019-07-11T07:21:08.613Z'
+    - sails > machinepack-process > machine > lodash:
+        patched: '2019-07-11T07:21:08.613Z'
+    - sails-disk > machinepack-fs > machine > lodash:
+        patched: '2019-07-11T07:21:08.613Z'
+    - sails-disk > machinepack-fs > machinepack-strings > lodash:
+        patched: '2019-07-11T07:21:08.613Z'
+    - sails-disk > machinepack-fs > machinepack-json > machine > lodash:
+        patched: '2019-07-11T07:21:08.613Z'
+    - sails-disk > machinepack-fs > machinepack-strings > machine > lodash:
+        patched: '2019-07-11T07:21:08.613Z'
+    - sails-disk > machinepack-fs > machinepack-util > machine > lodash:
+        patched: '2019-07-11T07:21:08.613Z'
+    - sails > machinepack-process > machinepack-json > machine > lodash:
+        patched: '2019-07-11T07:21:08.613Z'
+    - sails > machinepack-redis > machine > include-all > lodash:
+        patched: '2019-07-11T07:21:08.613Z'
