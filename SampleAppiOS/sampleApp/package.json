@@ -1,21 +1,25 @@
 {
-    "name": "sampleApp",
-    "private": true,
-    "version": "0.0.0",
-    "description": "a Sails application",
-    "dependencies": {
-        "sails": "1.0.0",
-        "grunt": "1.0.0",
-        "sails-disk": "~1.0.0",
-        "ejs": "0.8.4",
-        "optimist": "0.3.4"
-    },
-    "scripts": {
-        "start": "node app.js",
-        "debug": "node debug app.js"
-    },
-    "main": "app.js",
-    "repository": "",
-    "author": "",
-    "license": ""
+  "name": "sampleApp",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "dependencies": {
+    "sails": "1.2.2",
+    "grunt": "1.0.3",
+    "sails-disk": "~1.1.2",
+    "ejs": "0.8.4",
+    "optimist": "0.3.4",
+    "snyk": "^1.192.6"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "debug": "node debug app.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "main": "app.js",
+  "repository": "",
+  "author": "",
+  "license": "",
+  "snyk": true
 }
